@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CHEAT SLOT GOLDEN666 Hacker Style</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      font-family: monospace;
+      color: #ffd700; /* emas */
+      text-align: center;
+      background: black;
+    }
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    /* Animasi glow berdenyut */
+    @keyframes pulseGlow {
+      0% { box-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700; }
+      50% { box-shadow: 0 0 30px #ffd700, 0 0 60px #ffd700; }
+      100% { box-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700; }
+    }
+    @keyframes textPulse {
+      0% { text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700; }
+      50% { text-shadow: 0 0 30px #ffd700, 0 0 60px #ffd700; }
+      100% { text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700; }
+    }
+
+    .box {
+      border: 2px solid #ffd700;
+      padding: 20px;
+      width: 400px;
+      margin: 50px auto;
+      background: black;
+      color: #ffd700;
+      animation: pulseGlow 2s infinite;
+    }
+    .box h2, .box p {
+      animation: textPulse 2s infinite;
+    }
+    input, select, button {
+      margin: 10px;
+      padding: 10px;
+      width: 80%;
+      border-radius: 5px;
+      border: none;
+    }
+    button {
+      background: #ffd700;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      animation: pulseGlow 2s infinite;
+    }
+    .progress {
+      width: 80%;
+      background: #333;
+      margin: 20px auto;
+      border-radius: 5px;
+      overflow: hidden;
+      animation: pulseGlow 2s infinite;
+    }
+    .progress-bar {
+      height: 20px;
+      width: 0%;
+      background: #daa520;
+      transition: width 0.3s;
+      animation: pulseGlow 2s infinite;
+    }
+    /* GIF center */
+    .gif-center {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .gif-center img {
+      box-shadow: 0 0 20px #ffd700, 0 0 40px #ffd700;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Hacker Matrix -->
+  <canvas id="matrix"></canvas>
+
+  <!-- Form GOLDEN666 -->
+  <div class="box" id="formBox">
+    <h2>CHEAT SLOT GOLDEN666</h2>
+    <p>AKTIFKAN AKUN GACOR</p>
+    <label>Nama ID:</label><br>
+    <input type="text" placeholder="Masukkan ID"><br>
+    <label>Pilih Provider:</label><br>
+    <select>
+      <option>PRAGMATIC PLAY</option>
+      <option>HABANERO</option>
+      <option>JILI</option>
+      <option>SLOT MANIA</option>
+      <option>NLC</option>
+      <option>PG SOFT</option>
+    </select><br>
+    <label>Fitur Tersedia:</label><br>
+    <select>
+      <option>AUTO MAXWIN</option>
+      <option>FREE SPIN</option>
+    </select><br>
+    <button onclick="startLoading()">PASANG</button>
+
+    <!-- GIF tampil di bawah form -->
+    <div class="gif-center">
+      <img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUyNTQ4ZnpmYjMydzRoMjIyb2g2aTZhM2RqdjFsYms5ZDh4aDZtajlpaCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/YN96HMixmb0IGgefiI/200.gif" 
+           alt="Gold Hacker GIF" width="250">
+    </div>
+  </div>
+
+  <!-- Tampilan loading -->
+  <div class="box" id="loadingBox" style="display:none;">
+    <h2>CHEAT SLOT GOLDEN666</h2>
+    <p>AKTIFKAN AKUN GACOR</p>
+    <p>Infiltrasi Database...</p>
+    <div class="progress">
+      <div class="progress-bar" id="bar"></div>
+    </div>
+    <p id="percent">0%</p>
+
+    <!-- GIF juga muncul saat loading -->
+    <div class="gif-center">
+      <img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUyNTQ4ZnpmYjMydzRoMjIyb2g2aTZhM2RqdjFsYms5ZDh4aDZtajlpaCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/YN96HMixmb0IGgefiI/200.gif" 
+           alt="Gold Hacker GIF" width="250">
+    </div>
+  </div>
+
+  <script>
+    // Animasi Matrix Hacker Background
+    const canvas = document.getElementById("matrix");
+    const ctx = canvas.getContext("2d");
+
+    function resizeCanvas() {
+      canvas.height = window.innerHeight;
+      canvas.width = window.innerWidth;
+    }
+    window.addEventListener("resize", resizeCanvas);
+    resizeCanvas();
+
+    const letters = "01"; 
+    const fontSize = 16;
+    let columns = canvas.width / fontSize;
+    const drops = [];
+
+    function initDrops() {
+      columns = canvas.width / fontSize;
+      drops.length = 0;
+      for (let x = 0; x < columns; x++) {
+        drops[x] = 1;
+      }
+    }
+    initDrops();
+
+    function draw() {
+      ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+      gradient.addColorStop(0, "#ffd700");
+      gradient.addColorStop(0.5, "#daa520");
+      gradient.addColorStop(1, "#ffcc00");
+
+      ctx.fillStyle = gradient;
+      ctx.font = fontSize + "px monospace";
+
+      for (let i = 0; i < drops.length; i++) {
+        const text = letters.charAt(Math.floor(Math.random() * letters.length));
+        ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+        if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+          drops[i] = 0;
+        }
+        drops[i]++;
+      }
+    }
+    setInterval(draw, 33);
+
+    // Progress bar + redirect
+    function startLoading() {
+      document.getElementById("formBox").style.display = "none";
+      document.getElementById("loadingBox").style.display = "block";
+
+      let bar = document.getElementById("bar");
+      let percent = document.getElementById("percent");
+      let progress = 0;
+
+      let interval = setInterval(() => {
+        if(progress >= 100) {
+          clearInterval(interval);
+          window.location.href = "https://golden666jp.com/";
+        } else {
+          progress += 4;
+          bar.style.width = progress + "%";
+          percent.innerText = progress + "%";
+        }
+      }, 300);
+    }
+  </script>
+</body>
+</html>
